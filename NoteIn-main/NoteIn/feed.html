@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeds</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="nav-container"></div>
+
+    <div id="feed">
+        <div id="feed-left"></div>
+
+        <div id="feed-middle">
+            
+          <!-- <a href="post.html" class="post">+ Add Post</a>  -->
+          <form id="insert">
+            <input type="text" id="title" placeholder="Enter title">
+            <input type="file" id="image" accept="image/*">
+            <div id="preview"></div>
+            <button id="create-postcard">Create Postcard</button>
+        </form>
+        <div id="postcard-container">
+            <div id="postcard">
+                <h2 id="postcard-title"></h2>
+                <img id="postcard-image" src="" alt="Postcard Image">
+            </div>
+        </div>
+    </div>
+
+
+        
+        <div id="feed-right"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#nav-container").load("nav.html");
+        });
+      </script>
+</body>
+</html>

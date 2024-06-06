@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="nav-container"></div>
+
+    <div id="note">
+        <div id="note-left"></div>
+
+        <div id="note-middle">
+            <form class="note-form" id="syllabusForm">
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                    <option value="btech">Bachelor of Technology</option>
+                    <option value="mca">Master in Computer Application</option>
+                    <option value="mba">Master of Business Administration</option>
+                </select>
+                <br><br>
+                <label for="semester">Semester:</label>
+                <select id="semester" name="semester">
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+                </select>
+                <br><br>
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="btech101">Discreate Mathematics</option>
+                    <option value="btech102">Statistics, probabaility and calculas</option>
+                    <option value="btech103">Fundamentals of Computer Science</option>
+                    <option value="btech104">Principle of Electrical Engineering</option>
+                    <option value="btech105">Fundamentals of Physics</option>
+                    
+        
+                    <option value="btech201">Linear Algebra</option>
+                    <option value="btech202">Statistical Methods</option>
+                    <option value="btech203">Data Structures and Algorithms </option>
+                    <option value="btech204">Principal of Electronics</option>
+                    <option value="btech205">Fundamentals of Economics</option>		
+        
+                    <option value="btech301">Intro to Programming</option>
+                    <option value="btech302">Discrete Structure</option>
+                    <option value="btech303">Circuits</option>
+                    <option value="btech304">Electromnics</option>
+                    <option value="btech305">Data Strucuture</option>
+        
+                    <option value="btech401">Analysis DEsign of Algorithm</option>
+                    <option value="btech402">Software Engineering</option>
+                    <option value="btech403">Computer Org. and Architecture</option>
+                    <option value="btech404">Operating System</option>
+                    <option value="btech405">Java</option>
+                    
+                    <option value="btech501">Theory of Computation </option>
+                    <option value="btech502">Database Management System</option>
+                    <option value="btech503">Pattern Reconigation</option>
+                    <option value="btech504">Cyber Secuirity</option>
+                    <option value="btech505">Internet of Web Technology</option>
+        
+                    <option value="btech601">Machine Learning</option>
+                    <option value="btech602">Computer Network</option>
+                    <option value="btech603">Computer Graphics Visualization</option>
+                    <option value="btech604">Compiler Design</option>
+                    <option value="btech605">Advanced Computer Architecture </option>
+                    <option value="btech606">Knowledge Managemant</option>
+        
+                    <option value="btech701">Computational Intelligence</option>
+                    <option value="btech702">Software Architecture</option>
+                    <option value="btech703">Deep and Re-inForesment learning</option>
+                    <option value="btech704">Wireless and Mobile Computing</option>
+                    <option value="btech705">Cryptography and Information Secuirity</option>
+                    <option value="btech706">Big Data</option>
+        
+                    <option value="btech801">Internet of Things</option>
+                    <option value="btech802">Block-Chain Technologics </option>
+                    <option value="btech803">Cloud Computing</option>
+                    <option value="btech804">High performance Computing </option>
+                    <option value="btech805">Object Orianted Software Engineering </option>
+        
+                    <option value="mca101">C Programming</option>
+                    <option value="mca102">Operating System</option>
+                    <option value="mca103">Statistical Mathematics</option>
+                    <option value="mca104">Information Technology</option>
+                    <option value="mca105">Communication Skills</option>
+        
+                    <option value="mca201">Database Management System</option>
+                    <option value="mca202">Computer Network</option>
+                    <option value="mca203">Software Engineering and UML</option>
+                    <option value="mca204">Algorithm Design</option>
+                    <option value="mca205">Oops with Java</option>
+        
+                    <option value="mca301">Data Mining</option>
+                    <option value="mca302">Artificial Intelligence</option>
+                    <option value="mca303">Phython Programming </option>
+                    <option value="mca304">Big data and data Scienece</option>
+                    <option value="mca305">Web technology</option>
+        
+                    <option value="mca401">Advance Python</option>
+                    <option value="mca402">Advance Web Technology</option>
+                    <option value="mca403">Big data and Analytics</option>
+                    <option value="mca404">Deep Learning</option>
+                    <option value="mca405">Cloud Computing</option>
+                    
+                    <option value="mba101">Organizational Behaviour</option>
+                    <option value="mba103">Principle and Practic of Management</option>
+                    <option value="mba103">Accounting for Manager</option>
+                    <option value="mba104">Manaagerial Economics</option>
+                    <option value="mba105">Commputer Application in Management</option>
+        
+                    <option value="mba201">Human resource Management</option>
+                    <option value="mba202">Corporate Finance</option>
+                    <option value="mba203">marketing Management</option>
+                    <option value="mba204">Production and Operation Management</option>
+                    <option value="mba205">Business research and Methodology</option>
+                    
+                    <option value="mba301">Enterprenourship Managemant</option>
+                    <option value="mba302">Businessethics and Corporate Governance</option>
+                    <option value="mba304">organizational Development</option>
+                    <option value="mba305">Industrial Phychology</option>
+        
+                    <option value="mca401">Stratigic Management</option>
+                    <option value="mba403">Human Resource Development</option>
+                    <option value="mba404">Stratigic Human Resource Management</option>
+                    <option value="mba405">Total Quality Managemant</option>
+        
+                </select>
+                <br><br>
+                <label for="code">Subject Code:</label>
+                <select id="code" name="code">
+                    <option value="btech101">btech101</option>
+                    <option value="btech102">btech102</option>
+                    <option value="btech103">btech103</option>
+		            <option value="btech104">btech104</option>
+                    <option value="btech105">btech105</option>
+
+                    <option value="btech201">btech201</option>
+                    <option value="btech202">btech202</option>
+                    <option value="btech203">btech203</option>
+                    <option value="btech204">btech204</option>
+                    <option value="btech205">btech205</option>
+
+                    <option value="btech301">btech301</option>
+                    <option value="btech302">btech302</option>
+                    <option value="btech303">btech303</option>
+                    <option value="btech304">btech304</option>
+                    <option value="btech305">btech305</option>
+
+                    <option value="btech401">btech401</option>
+                    <option value="btech402">btech402</option>
+                    <option value="btech403">btech403</option>
+                    <option value="btech404">btech404</option>
+                    <option value="btech405">btech405</option>
+
+                    <option value="btech501">btech501</option>
+                    <option value="btech502">btech502</option>
+                    <option value="btech503">btech503</option>
+                    <option value="btech504">btech504</option>
+                    <option value="btech505">btech505</option>
+
+                    <option value="btech601">btech601</option>
+                    <option value="btech602">btech602</option>
+                    <option value="btech603">btech603</option>
+                    <option value="btech604">btech604</option>
+                    <option value="btech605">btech605</option>
+
+                    <option value="btech701">btech701</option>
+                    <option value="btech702">btech702</option>
+                    <option value="btech703">btech703</option>
+                    <option value="btech704">btech704</option>
+                    <option value="btech705">btech705</option>
+
+                    <option value="btech801">btech801</option>
+                    <option value="btech802">btech802</option>
+                    <option value="btech803">btech803</option>
+                    <option value="btech804">btech804</option>
+                    <option value="btech805">btech805</option>
+
+                    <option value="mca101">mca101</option>
+                    <option value="mca102">mca102</option>
+                    <option value="mca103">mca103</option>
+                    <option value="mca104">mca104</option>
+                    <option value="mca105">mca105</option>
+
+                    <option value="mca201">mca201</option>
+                    <option value="mca202">mca202</option>
+                    <option value="mca203">mca203</option>
+                    <option value="mca204">mca204</option>
+                    <option value="mca205">mca205</option>
+
+                    <option value="mca301">mca301</option>
+                    <option value="mca302">mca302</option>
+                    <option value="mca303">mca303</option>
+                    <option value="mca304">mca304</option>
+                    <option value="mca305">mca305</option>
+
+                    <option value="mca401">mca401</option>
+                    <option value="mca402">mca402</option>
+                    <option value="mca403">mca403</option>
+                    <option value="mca404">mca404</option>
+                    <option value="mca405">mca405</option>
+
+                    <option value="mba101">mba101</option>
+                    <option value="mba102">mba102</option>
+                    <option value="mba103">mba103</option>
+                    <option value="mba104">mba104</option>
+                    <option value="mba105">mba105</option>
+
+                    <option value="mba201">mba201</option>
+                    <option value="mba202">mba202</option>
+                    <option value="mba203">mba203</option>
+                    <option value="mba204">mba204</option>
+                    <option value="mba205">mba205</option>
+
+                    <option value="mba301">mba301</option>
+                    <option value="mba302">mba302</option>
+                    <option value="mba303">mba303</option>
+                    <option value="mba304">mba304</option>
+                    <option value="mba305">mba305</option>
+
+                    <option value="mba401">mba401</option>
+                    <option value="mba402">mba402</option>
+                    <option value="mba403">mba403</option>
+                    <option value="mba404">mba404</option>
+                    <option value="mba405">mba405</option>
+                </select>
+                <br><br>
+                <button class="download" type="submit">Download Notes</button>
+            </form>
+        </div>
+
+        <div id="note-right"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $("#nav-container").load("nav.html");
+		});
+	</script>
+</body>
+</html>

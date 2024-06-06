@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="nav-container"></div>
+
+    <div id="chat">
+        <div id="chat-left"></div>
+
+        <div id="chat-middle">
+          <div class="card">
+            <iframe src='https://webchat.botframework.com/embed/chatlang143-bot?s=hfii1hH9__Y.Ec4V9q9DFk78spX1R8mcuLxR3K9HGcYQc4HWuAH50BQ'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+            
+          </div>
+    
+        </div>
+
+        <div id="chat-right"></div>
+    </div>
+    <script src="script.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#nav-container").load("nav.html");
+    });
+  </script>
+  <script>
+    document.getElementById('messageForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const messageText = document.getElementById('message').value;
+  
+      if (messageText.trim() === '') {
+          return;
+      }
+  
+      // Create the user message element
+      const userMessage = document.createElement('div');
+      userMessage.className = 'message';
+      userMessage.textContent = messageText;
+      document.getElementById('messageScreen').appendChild(userMessage);
+  
+      // Simulate a response message
+      setTimeout(() => {
+          const responseMessage = document.createElement('div');
+          responseMessage.className = 'message response';
+          responseMessage.textContent = 'This is a response message.';
+          document.getElementById('messageScreen').appendChild(responseMessage);
+  
+          // Scroll to the bottom of the messages
+          document.getElementById('messageScreen').scrollTop = document.getElementById('messageScreen').scrollHeight;
+      }, 1000);
+  
+      // Clear the input field
+      document.getElementById('message').value = '';
+      // Scroll to the bottom of the messages
+      document.getElementById('messageScreen').scrollTop = document.getElementById('messageScreen').scrollHeight;
+  });
+  </script>
+</body>
+</html>

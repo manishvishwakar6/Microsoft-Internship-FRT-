@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+    <div id="main">
+        <div id="navbar">
+            <div id="navbar-left-logo"><img src="./images/NoteIn.png"></div>
+    
+            <div id="navbar-middle-search">
+                <div id="cover-search">
+                    <form action="/search" method="get">
+                        <input  type="text" placeholder="Search" name="search" > 
+                        <i id="search" class="ri-search-line"></i>
+                        </form>
+                </div>
+               
+            </div>
+    
+    
+            <div id="navbar-right-menu">
+                <h3><a href="index.html" style="color: white; text-decoration: none;">Home</a></h3>
+                <h3><a href="feed.html" style="color: white; text-decoration: none;">Feed</a></h3>
+                <h3><a href="note.html" style="color: white; text-decoration: none;">Notes</a></h3>
+                <h3><a href="chatbot.html" style="color: white; text-decoration: none;">ChatBot</a></h3>
+            </div>
+    
+            <div id="navbar-last-login">
+                <!-- <div id="Signup">SignUp</div> -->
+            </div>
+        </div>
+        <div id="page1">
+    
+            <div id="page1-left">
+                <h2>No Good or Bad notes just notes for all.</h2>
+                <h1>Get all the notes <br> in one place</h1>
+                <br>
+                <button type="button" id="startButton">Get Started</button>
+            </div>
+    
+            <div id="page1-right">
+                <div id="page1-right-top-images">
+                    <img src="./images/wave.png" alt="">
+                </div>
+                <div id="page1-right-note">
+                    <img src="./images/note.png" alt="">
+                </div>
+            </div>
+        </div>
+    
+        <div id="page2">
+            <div id="page2-top">
+                <div id="page2-image">
+                    <img src="./images/page2-image-1.png" alt="">
+                </div>
+    
+                <div id="page2-cards">
+    
+                    <div id="page2-card-1">
+                        <h2>For Students</h2>
+                        <h4>Through this Students are able to indepedenly and easily access different notes.</h4>
+                        <ul>
+                            <li>Flexibility</li>
+                            <li>Avalibility</li>
+                            <li>Easy & Free Access</li>
+                        </ul>
+    
+                        <img src="./images/student.png">
+                    </div>
+    
+                    <div id="page2-card-2">
+                        <h2>For Teachers</h2>
+                        <h4>Through this Teachers are able to easily distribute notes with students.</h4>
+                        <ul>
+                            <li>Increase Efficiency</li>
+                            <li>Reduce Fragmentation</li>
+                            <!-- <li>Easy & Free Access</li> -->
+                        </ul>
+                        <img src="./images/teacher.png">
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div id="page2-bottom">
+                
+                <div id="page-feedback">
+                    <h2>Feedback</h2>
+    
+                        <form action="feedback" method="post">
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required title="E-mail" comment="E-mail">
+                        <br><br>
+                        <textarea id="message" name="message" placeholder="Feedback" required title="Feedback" ></textarea>
+                        <br>
+                        <button type="submit">Send</button>
+                        </form>
+                    <img src="./images/arrow.png" class="image1">
+                    <img src="./images/kite.png" class="image2">    
+                </div>  
+                 
+                <div id="page2-details">
+                    <div id="page-detals-top">
+                        <img src="./images/bottom.png" alt="">
+                    </div>
+                    <div id="page-detals-bottom">
+                        <div id="page-detals-bottom-left-image">
+                            <div id="project">
+                                <h3>Our Project</h3>
+                            </div>
+                            <div id="notein-image">
+                                <img src="./images/white.png">
+                            </div>
+                        </div>
+                        <div id="page-detals-bottom-right">
+                            <div id="page-detals-bottom-right-main">
+                                <img src="./images/collab.png" alt="">
+                            </div>
+                        </div>
+                        <!-- <img src="./images/white.png"> -->
+                    </div>
+                        <div id="partner"></div>
+                        <img src="./images/partners.png">
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+   
+
+
+    <script>
+        document.getElementById('startButton').addEventListener('click', function() {
+           window.location.href = 'feed.html'; 
+        });
+      </script>
+      
+       <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Card</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="nav-container"></div>
+  
+  <div id="post">
+
+    <div id="post-left"></div>
+
+    <div id="post-middle">
+        <form id="insert">
+          <input type="text" id="title" placeholder="Enter title">
+          <input type="file" id="image" accept="image/*">
+          <div id="preview"></div>
+          <button id="create-postcard">Create Post</button>
+        </form>
+    </div>
+
+    <div id="post-right"></div>
+
+</div>
+
+
+
+  <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#nav-container").load("nav.html");
+        });
+      </script>
+</body>
+</html>
