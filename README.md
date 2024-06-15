@@ -51,18 +51,19 @@ Team Members' Contribution :
 2. Preet Das : Coding ( HTML, CSS, JS) & Testing
 3. Deepraj Patel : Coding ( HTML, CSS, JS) & UI Design
 4. Manish Kumar Vishwakarma : Azure Services
+   
 Azure Technologies Used For Project :
 1. Static Web App Services
 2. Virtual Network
 3. Web Applicatiom Firewall Policies (WAF)
 4. Language AI
 5. Azure AI Bot Service
+   
 Azure Services Used :
 Untitled315_20240612104423
 
 1. Static Web App Service
 Screenshot_10-6-2024_174842_portal azure com
-
 2. Virtual Network
 Screenshot 2024-06-12 104532
 3. Web Application Firewall Policies
@@ -71,6 +72,7 @@ Screenshot 2024-06-12 104906
 Screenshot 2024-06-12 104948
 5. Azure AI Bot Service
 Screenshot 2024-06-12 105054
+
 Project Demo Screenshots :
 1. Home Page :
 Screenshot_5-6-2024_115930_witty-bay-0f5e0ee00 5 azurestaticapps net
@@ -78,17 +80,8 @@ Screenshot_5-6-2024_115930_witty-bay-0f5e0ee00 5 azurestaticapps net
 2. Post Page :
 Screenshot_5-6-2024_144157_witty-bay-0f5e0ee00 5 azurestaticapps net
 
-Warning
-
-Apologies for the inconvenience. The feature you're trying to access is currently unavailable. This is due to the fact that the necessary back-end infrastructure to support this feature is still under development. Additionally, we have not yet deployed the dynamic aspects of our website. We appreciate your understanding and patience as we work to improve our services.
-
 3. Notes Page :
 Screenshot_5-6-2024_14856_witty-bay-0f5e0ee00 5 azurestaticapps net
-
-
-Warning
-
-Apologies for the inconvenience. The feature you're trying to access is currently unavailable. This is due to the fact that the necessary back-end infrastructure to support this feature is still under development. Additionally, we have not yet deployed the dynamic aspects of our website. We appreciate your understanding and patience as we work to improve our services.
 
 4. ChatBot Page :
 Screenshot_5-6-2024_161338_witty-bay-0f5e0ee00 5 azurestaticapps net
